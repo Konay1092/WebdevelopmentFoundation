@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Show and Hide Method</h1>
+    <div class="container">
+      <div
+        id="div1"
+        style="
+          width: 300px;
+          background-color: blue;
+          border: 1px solid black;
+          height: 200px;
+        "
+      >
+        Div1
+      </div>
+      <div
+        id="div2"
+        style="
+          width: 300px;
+          background-color: orange;
+          border: 1px solid black;
+          height: 200px;
+        "
+      >
+        Div2
+      </div>
+      <div
+        id="div3"
+        style="
+          width: 300px;
+          background-color: grey;
+
+          border: 1px solid black;
+          height: 200px;
+        "
+      >
+        Div3
+      </div>
+    </div>
+    <script src="./jquery/libs/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        //callback function
+        $("#div1").fadeTo(1000, 0, function () {
+          "#div2".slide();
+        });
+      });
+    </script>
+  </body>
+</html>

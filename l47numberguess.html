@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess game</title>
+    
+   <style>
+       body{
+           background-color: #f4f4f4;
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           
+        justify-content: center;
+       }
+       .form-control .btn{
+           padding:10px;
+
+       }
+       #game span{
+           display: block;
+           margin-top: 12px;
+       }
+   </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Guess Project</h1>
+      <p>
+        Guess a number between<span class="minnumber"></span>to<span
+          class="maxnumber"
+        ></span></p>
+        <div id="game">
+            <input type="number" name="guessnumber" id="guessnumber" class="form-control" placeholder="Enter your guess number.....">
+            <input type="submit" id="btn" class="btn">
+
+            <span class="message1"> </span>
+            <span class="message2"> </span>
+        </div>
+
+      </p>
+    </div>
+
+    <script src="js/l47numberguess.js"></script>
+  </body>
+</html>

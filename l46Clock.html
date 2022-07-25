@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      body {
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: brown;
+      }
+      div {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: cadetblue;
+      }
+      #display {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="display">6:11:20 PM Thursday</h1>
+    </div>
+
+    <script>
+      console.log("hay");
+      function startclock() {
+        let getdisplay = document.getElementById("display");
+        const day = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Sunday",
+        ];
+        //console.log(day);
+        //console.log(day[1]);
+        //console.log(getdisplay);
+
+        let getdate = new Date();
+        let gethours = getdate.getHours();
+        //console.log(gethours);
+
+        let getminutes = getdate.getMinutes();
+        //console.log(getminutes);
+        let getseconds = getdate.getSeconds();
+        //conosle.log(getseconds);
+        let getday = getdate.getDay();
+
+        let getampm;
+        switch (gethours > 12) {
+          case true:
+            getampm = "PM";
+            gethours = gethours - 12;
+            break;
+          case false:
+            getampm = "AM";
+            break;
+        }
+        let setclock = `${gethours}:${getminutes}:${getseconds} ${getampm} ${day[getday]}`;
+        getdisplay.textContent = setclock;
+      }
+
+      startclock();
+      setInterval(startclock, 1000);
+    </script>
+  </body>
+</html>
+<!-- 2DC -->

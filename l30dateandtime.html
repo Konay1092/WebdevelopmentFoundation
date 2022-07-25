@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date And Time</title>
+</head>
+<body>
+
+
+	<div class="footer">
+		<small>Copyright © <span id="dimyear"></span> Eleven Media Group Co., Ltd. All rights reserved.</small>
+	</div>
+
+
+	<script type="text/javascript">
+		
+		let date = new Date();
+		console.log(date);
+
+
+		// let getdate = new Date().getDate();
+		let getdate = new Date().getDate();
+		console.log(getdate);
+
+		let hour = new Date().getHours();
+		console.log(`this is hours = ${hour}`);
+
+		let minute = new Date().getMinutes();
+		console.log(`this is minutes = ${minute}`);
+
+
+		let second = new Date().getSeconds();
+		console.log(`this is seconds = ${second}`);
+
+
+			// 1s = 1000 ms
+			// 1 jan 1970 > upnow
+		let time = new Date().getTime();
+		// console.log(`this is time = ${time}`);
+
+		let now = Date.now();
+		console.log(`this is now = ${now}`);
+
+
+
+		// return index number January is 0 / December is 11
+		let month = date.getMonth();
+		console.log(`this is month = ${month}`);
+
+
+
+		let day = date.getDay();
+		console.log(`this is day = ${day}`);
+
+
+		let year = date.getFullYear();
+		console.log(`this is year = ${year}`);
+
+		let utcyear = date.getUTCFullYear();
+		console.log(`this is UTC year = ${utcyear}`);
+
+
+		document.getElementById('dimyear').textContent = utcyear;
+
+
+
+		// m d y hr:m:s
+		let birthday = new Date('8-10-2003');
+		birthday = new Date('8-10-2003 11:35:00');
+		birthday = new Date('Aug 10 2003');
+		birthday = new Date('August 10 2003 11:00:00');
+		birthday = new Date ('11/10/2005');
+
+		console.log(birthday);
+
+
+			// 2 is march . cuz 0 is jun
+		birthday.setMonth(2);
+		birthday.setDate(12);
+		birthday.setFullYear(2003);
+
+		birthday.setHours(15);
+		birthday.setMinutes(30);
+		birthday.setSeconds(50);
+
+
+
+
+		console.log(birthday);
+
+
+
+
+
+	</script>
+	</body>
+</html>
+
+
+<!-- string
+number
+boolean
+object = date object
+object = array -->
+
+<!-- closet -->
+<!-- index number
+[0,1,2,3,4,5,6,7,8,9,10,11]
+[jan,feb,mar,apr,may,jun,jly,aug,sep,oct,nov,dec] -->
+
+
+<!-- [0,1,2,3,4,5,6]
+[sun,mon,tue,wed,thu,fri,sat] -->
+
