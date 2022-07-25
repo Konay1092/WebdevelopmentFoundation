@@ -1,0 +1,153 @@
+/*Pseudo Class (:)*/
+
+.div1{
+	width:300px;
+	height: 100px;
+	background-color:green;
+}
+
+/*.div1:first-child{
+	background-color: red;
+	color: #fff;
+	border-radius: 20px;
+}*/
+
+
+/*.div1:first-of-type{
+	background-color:blue;
+	color: #fff;
+}*/
+
+
+
+
+
+/*.div1:last-child{
+	background-color: red;
+}*/
+
+
+/*.div1:last-of-type{
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+
+
+/*.div1:nth-child(3){
+	background-color: blue;
+	color: #fff;
+}
+*/
+
+/*.div1:nth-of-type(2){
+	background-color: red;
+}*/
+
+
+
+
+
+/*.div1:nth-child(odd){
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+/*.div1:nth-child(even){
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+
+
+
+
+
+/*.div1:nth-of-type(odd){
+	background-color: blue;
+	color: #fff;
+}
+*/
+
+/*.div1:nth-of-type(even){
+	background-color: blue;
+	color: #fff;
+}
+*/
+
+
+
+
+
+
+
+
+/*_____________________________*/
+
+/*Child Vs Type*/
+
+
+/*.div1:first-child{
+	background-color: red;
+	color: #fff;
+	border-radius: 20px;
+}
+*/
+
+/*.div1:first-of-type{
+	background-color:blue;
+	color: #fff;
+}*/
+
+
+
+
+
+/*.div1:last-child{
+	background-color: red;
+	color: #fff;
+	border-radius: 20px;
+}*/
+
+/*.div1:last-of-type{
+	background-color: red;
+	color: #fff;
+	border-radius: 20px;
+}
+*/
+
+
+
+
+
+/*.div1:nth-child(odd){
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+/*.div1:nth-of-type(odd){
+	background-color: blue;
+	color: #fff;
+}*/
+
+
+
+
+
+
+/*.div1:hover{
+	cursor: pointer;
+	background-color: orange;
+}*/
+
+
+/*ordinal number
+1st
+2nd
+3rd
+4th
+5.........nth
